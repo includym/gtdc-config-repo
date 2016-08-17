@@ -13,6 +13,6 @@ eureka:
 ---
 
 spring:
-  profiles: local
+  profiles: local, dev
   jpa:
     show-sql: true
