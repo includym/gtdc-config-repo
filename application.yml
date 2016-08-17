@@ -15,4 +15,6 @@ eureka:
 spring:
   profiles: local
   jpa:
+    hibernate:
+      ddl-auto: create-drop
     show-sql: true
