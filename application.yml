@@ -9,3 +9,10 @@ eureka:
       defaultZone: ${EUREKA-SERVICE-URI:http://localhost:8761}/eureka
   instnace:
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+---
+
+spring:
+  profiles: local
+  jpa:
+    show-sql: true
