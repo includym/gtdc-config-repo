@@ -1,1 +1,18 @@
 
+spring:
+  jpa:
+    show-sql: false
+
+---
+spring:
+  profiles:local, dev
+  jpa:
+  show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA-SERVICE-URI:http://localhost:8761}/eureka
+  instnace:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
